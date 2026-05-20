@@ -1,0 +1,17 @@
+.glyph {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-color: currentColor;
+    -webkit-mask-image: var(--glyph-url);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+    mask-image: var(--glyph-url);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}

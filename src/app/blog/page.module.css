@@ -1,0 +1,30 @@
+.page {
+    max-width: var(--column-max);
+    margin: 0 auto;
+    padding: 72px var(--page-pad) 64px;
+}
+
+@media (max-width: 720px) {
+    .page { padding: 48px var(--page-pad) 48px; }
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(36px, 5.5vw, 52px);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    color: var(--coal);
+    margin-bottom: 12px;
+}
+
+.lede {
+    font-size: 16.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 52ch;
+}

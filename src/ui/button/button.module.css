@@ -1,0 +1,122 @@
+.btn {
+    --btn-bg: linear-gradient(to bottom, #ffffff 0%, #eef1f5 100%);
+    --btn-bg-hover: linear-gradient(to bottom, #f9fafc 0%, #e6eaef 100%);
+    --btn-bg-press: linear-gradient(to bottom, #dee3e9 0%, #ecf0f4 100%);
+    --btn-fg: var(--coal);
+    --btn-border: rgba(15, 30, 50, 0.20);
+    --btn-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.7),
+        0 1px 2px rgba(15, 30, 50, 0.06);
+    --btn-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 9px 16px;
+    background-image: var(--btn-bg);
+    color: var(--btn-fg);
+    border: 1px solid var(--btn-border);
+    border-radius: var(--radius);
+    box-shadow: var(--btn-shadow);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.005em;
+    line-height: 1.1;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+    text-shadow: var(--btn-text-shadow);
+    transition:
+        background-image 130ms var(--ease),
+        box-shadow 130ms var(--ease),
+        transform 80ms var(--ease),
+        border-color 130ms var(--ease);
+}
+
+.btn:hover:not(:disabled) {
+    background-image: var(--btn-bg-hover);
+}
+
+.btn:active:not(:disabled) {
+    background-image: var(--btn-bg-press);
+    box-shadow: inset 0 1px 2px rgba(15, 30, 50, 0.18);
+    transform: translateY(1px);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--deep);
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+/* ===== Variants ===== */
+
+/* Brand — cloudy-blue CTA, sky-bot → deep, matches the wordmark ramp. */
+.brand {
+    --btn-bg: linear-gradient(to bottom, #6aa6d4 0%, #1a6db5 100%);
+    --btn-bg-hover: linear-gradient(to bottom, #7ab2dc 0%, #2477be 100%);
+    --btn-bg-press: linear-gradient(to bottom, #135ca0 0%, #4f93cd 100%);
+    --btn-fg: #ffffff;
+    --btn-border: rgba(20, 60, 100, 0.62);
+    --btn-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.40),
+        0 1px 2px rgba(20, 60, 100, 0.22),
+        0 1px 0 rgba(20, 60, 100, 0.12);
+    --btn-text-shadow: 0 1px 0 rgba(12, 36, 60, 0.38);
+}
+
+/* Secondary — quiet paper button (the default). */
+.secondary {
+    /* Inherits .btn defaults. */
+}
+
+/* Ghost — transparent, hover tint. */
+.ghost {
+    background: transparent;
+    background-image: none;
+    border-color: transparent;
+    color: var(--ink);
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.ghost:hover:not(:disabled) {
+    background: rgba(15, 30, 50, 0.05);
+    background-image: none;
+}
+
+.ghost:active:not(:disabled) {
+    background: rgba(15, 30, 50, 0.08);
+    background-image: none;
+    box-shadow: none;
+}
+
+/* ===== Sizes ===== */
+.sm {
+    padding: 6px 12px;
+    font-size: 12.5px;
+}
+
+.md {
+    /* default */
+}
+
+.lg {
+    padding: 11px 20px;
+    font-size: 15px;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

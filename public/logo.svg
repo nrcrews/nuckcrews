@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="45 40 422 422" role="img" aria-labelledby="title">
+  <title id="title">RobotNet glossy lab robot head</title>
+  <defs>
+    <rect id="head-shape" x="95" y="90" width="322" height="322" rx="54" ry="54" />
+    <clipPath id="head-clip">
+      <use href="#head-shape" />
+    </clipPath>
+    <mask id="head-mask">
+      <rect width="512" height="512" fill="#000000" />
+      <use href="#head-shape" fill="#ffffff" />
+      <ellipse cx="188" cy="212" rx="36" ry="38" fill="#000000" />
+      <ellipse cx="324" cy="212" rx="36" ry="38" fill="#000000" />
+    </mask>
+    <mask id="outer-shadow-mask" maskUnits="userSpaceOnUse">
+      <rect width="512" height="512" fill="#ffffff" />
+      <use href="#head-shape" fill="#000000" />
+      <rect x="66" y="160" width="30" height="94" rx="10" ry="10" fill="#000000" />
+      <rect x="416" y="160" width="30" height="94" rx="10" ry="10" fill="#000000" />
+    </mask>
+
+    <linearGradient id="head-fill" x1="0" y1="90" x2="0" y2="412" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5897c6" />
+      <stop offset="0.34" stop-color="#4b8fc3" />
+      <stop offset="0.68" stop-color="#2f7fbd" />
+      <stop offset="1" stop-color="#1a6db5" />
+    </linearGradient>
+
+    <linearGradient id="ear-fill" x1="0" y1="150" x2="0" y2="264" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5897c6" />
+      <stop offset="0.48" stop-color="#408bc3" />
+      <stop offset="1" stop-color="#1a6db5" />
+    </linearGradient>
+
+    <linearGradient id="rim-stroke" x1="0" y1="90" x2="0" y2="412" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3f84b8" />
+      <stop offset="0.48" stop-color="#286fa9" />
+      <stop offset="1" stop-color="#135c9a" />
+    </linearGradient>
+
+    <linearGradient id="glass-cap" x1="0" y1="90" x2="0" y2="412" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.07" />
+      <stop offset="0.28" stop-color="#ffffff" stop-opacity="0.04" />
+      <stop offset="0.58" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="1" stop-color="#0f1e32" stop-opacity="0.04" />
+    </linearGradient>
+
+    <radialGradient id="surface-sheen" cx="0.34" cy="0.18" r="0.78">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="0.34" stop-color="#ffffff" stop-opacity="0.02" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="bottom-edge" x1="0" y1="300" x2="0" y2="412" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#073862" stop-opacity="0" />
+      <stop offset="1" stop-color="#073862" stop-opacity="0.34" />
+    </linearGradient>
+
+    <filter id="soft-shadow" x="40" y="70" width="432" height="382" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f1e32" flood-opacity="0.18" />
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#0f1e32" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <g filter="url(#soft-shadow)" mask="url(#outer-shadow-mask)">
+    <use href="#head-shape" fill="#000000" />
+    <rect x="66" y="160" width="30" height="94" rx="10" ry="10" fill="#000000" />
+    <rect x="416" y="160" width="30" height="94" rx="10" ry="10" fill="#000000" />
+  </g>
+
+  <g>
+    <g>
+      <rect x="66" y="160" width="30" height="94" rx="10" ry="10" fill="url(#ear-fill)" stroke="#286fa9" stroke-opacity="0.56" stroke-width="1.25" />
+      <rect x="416" y="160" width="30" height="94" rx="10" ry="10" fill="url(#ear-fill)" stroke="#286fa9" stroke-opacity="0.56" stroke-width="1.25" />
+      <rect x="68" y="164" width="26" height="28" rx="8" fill="#ffffff" opacity="0.14" />
+      <rect x="418" y="164" width="26" height="28" rx="8" fill="#ffffff" opacity="0.14" />
+    </g>
+
+    <g>
+      <g mask="url(#head-mask)">
+        <use href="#head-shape" fill="url(#head-fill)" />
+        <rect x="95" y="90" width="322" height="322" fill="url(#glass-cap)" clip-path="url(#head-clip)" />
+        <rect x="95" y="90" width="322" height="322" fill="url(#surface-sheen)" clip-path="url(#head-clip)" />
+        <rect x="95" y="300" width="322" height="112" fill="url(#bottom-edge)" clip-path="url(#head-clip)" />
+        <path
+          d="M122 129C151 108 210 101 256 101C314 101 369 110 392 134C382 164 357 189 324 202C275 221 186 216 135 180C126 163 122 146 122 129Z"
+          fill="#ffffff"
+          opacity="0.025"
+          clip-path="url(#head-clip)"
+        />
+      </g>
+      <use href="#head-shape" fill="none" stroke="url(#rim-stroke)" stroke-opacity="0.76" stroke-width="1.5" />
+    </g>
+  </g>
+</svg>
