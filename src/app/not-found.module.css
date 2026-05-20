@@ -1,0 +1,50 @@
+.page {
+    max-width: var(--column-max);
+    margin: 0 auto;
+    padding: 96px var(--page-pad) 80px;
+}
+
+@media (max-width: 720px) {
+    .page { padding: 64px var(--page-pad) 64px; }
+}
+
+.code {
+    display: block;
+    margin-bottom: 18px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(80px, 14vw, 144px);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    /* Small lift so the gradient cap reads against the paper bg. */
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+}
+
+.title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(32px, 5vw, 44px);
+    line-height: 1.04;
+    letter-spacing: -0.03em;
+    color: var(--coal);
+    margin-bottom: 14px;
+}
+
+.lede {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 52ch;
+    margin-bottom: 32px;
+}
+
+.ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
