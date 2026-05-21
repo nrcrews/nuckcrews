@@ -6,7 +6,7 @@ tags:
   - meta
 ---
 
-I've always been jealous of people with blogs, especially engineers. I'd tell myself that "those who have blogs are narcissist" to make me feel better. Yet here I am, starting a blog. A technical one. Does that make me a narcissist? At least that would make me right. Right?
+I've always been jealous of people with blogs, especially engineers. I'd tell myself that "those who have blogs are narcissists" to make me feel better. Yet here I am, starting a blog. A technical one. Does that make me a narcissist? At least that would make me right. Right?
 
 Anyway, that's what you, the reader, are going to get out of this blog. A stream of thought. Some good, some bad, some right, some wrong. But it will always be me.
 
