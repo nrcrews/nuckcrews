@@ -48,6 +48,12 @@ export const PROJECTS: Project[] = [
         href: "https://github.com/nrcrews/ShoppingAgent",
     },
     {
+        name: "Noteboard AI",
+        description: "A collaborative document editor with a built-in AI co-author.",
+        tags: ["ai", "agent", "web"],
+        year: 2024,
+    },
+    {
         name: "GPT Engineer",
         description: "An AI powered software engineer that wrote code in your codebase.",
         tags: ["ai", "agent"],
