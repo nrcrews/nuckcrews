@@ -36,7 +36,7 @@
     margin-bottom: 22px;
 }
 
-.title span { display: block; }
+.title > span { display: block; }
 
 .title span:first-child {
     font-weight: 500;
@@ -46,6 +46,13 @@
 .titleEm {
     font-weight: 700;
     color: var(--coal);
+}
+
+.titleAlias {
+    font-weight: 500;
+    color: var(--ink-soft);
+    /* Geist's `(` reads a hair tight against the preceding glyph at this size. */
+    margin-left: 0.05em;
 }
 
 .lede {

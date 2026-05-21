@@ -26,12 +26,15 @@ export default async function HomePage() {
                 />
                 <h1 className={styles.title}>
                     <span>Hi, I'm</span>
-                    <span className={styles.titleEm}>Nick Crews.</span>
+                    <span className={styles.titleEm}>
+                        Nick Crews.
+                    </span>
                 </h1>
                 <p className={styles.lede}>
-                    I build things, then write about them. Mostly technology,
-                    AI, and opinions I'm still working out. Posted here in
-                    case any of it's useful.
+                    My name's not actually nuck (don't call me that), it's Nick, 
+                    sometimes T (long story).
+                    I like to build things and write about it.
+                    Follow along.
                 </p>
                 <div className={styles.ctas}>
                     {latest ? (
