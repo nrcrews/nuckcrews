@@ -10,7 +10,7 @@ I've always been jealous of people with blogs, especially engineers. I'd tell my
 
 Anyway, that's what you, the reader, are going to get out of this blog. A stream of thought. Some good, some bad, some right, some wrong. But it will always be me.
 
-I hate to even bring up "AI" in my opening arguments, but it's kind of the thing that brought me here. My passion (programming), which is also my only addiction, is being taken from me. Yes, I like telling agents what to do as much as the next guy. But I stopped dreaming about code a few months ago for the first time in years and that makes me sad. So..
+I hate to even bring up "AI" in my opening arguments, but it's kind of the thing that brought me here. My passion (programming), which is also my only addiction, is no what it once was. Yes, I like telling agents what to do as much as the next guy. But I stopped dreaming about code a few months ago for the first time in years and that makes me sad. So..
 
 I'm trying this out. Forcing myself to do the thing I always wanted to start, but was too busy coding. And don't worry, I won't let the agents come near this.
 
