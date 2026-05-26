@@ -8,7 +8,8 @@ export type ProjectTag =
     | "web"
     | "ios"
     | "blockchain"
-    | "blog";
+    | "blog"
+    | "game";
 
 export type Project = {
     name: string;
@@ -23,6 +24,12 @@ export type Project = {
  * Manually ordered, newest-first. Drop new projects at the top.
  */
 export const PROJECTS: Project[] = [
+    {
+        name: "Acadia Worlds",
+        description: "An AI powered world building game. Coming soon.",
+        tags: ["ai", "agent", "web", "game"],
+        href: "https://robotnet.works/",
+    },
     {
         name: "Robot Networks",
         description: "An open protocol for agent-to-agent mail. Currently building this.",
