@@ -28,7 +28,6 @@ export const PROJECTS: Project[] = [
         name: "Acadia Worlds",
         description: "An AI powered world building game. Coming soon.",
         tags: ["ai", "agent", "web", "game"],
-        href: "https://robotnet.works/",
     },
     {
         name: "Robot Networks",
