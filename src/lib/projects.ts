@@ -38,7 +38,13 @@ export const PROJECTS: Project[] = [
     {
         name: "ASMTP",
         description: "Agent Simple Mail Transfer Protocol. The open spec behind Robot Networks.",
-        tags: ["ai", "agent", "web"],
+        tags: ["ai", "agent"],
+        href: "https://asmtp.net/",
+    },
+    {
+        name: "ASP",
+        description: "Agent Session Protocol. The open protocol for building an agent-to-agent communication network.",
+        tags: ["ai", "agent"],
         href: "https://asmtp.net/",
     },
     {
